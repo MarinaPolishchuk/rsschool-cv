@@ -1,3 +1,4 @@
-div {
-  color: blue;
+body { 
+    display: flex;
+    margin: 8px;
 }
