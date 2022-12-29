@@ -5,10 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap"
-  rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet">
 
   <title> Plant </title>
 </head>
@@ -16,96 +16,128 @@
   <div class="wraper">
     <header class="header">
       <div class="header__logo">
-        <a href="#" class="logo"> <img class="logo__img" hight="23px" weight="81" src="assets/logo.jpg" alt="Plants"></a>
+        <a href="#" class="logo"> <img class="logo__img" hight="23px" weight="81" src="assets/logo.jpg"
+            alt="Plants"></a>
       </div>
       <nav class="header__navigation">
         <ul class="navigation">
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Home</a>
+            <a href="#home" class="navigation__link">Home</a>
           </li>
-          <li class="navigation__item"> 
-            <a href="#" class="navigation__link">About us</a>
+          <li class="navigation__item">
+            <a href="#about-us" class="navigation__link">About us</a>
           </li>
-          <li class="navigation__item"> 
-            <a href="#" class="navigation__link">Service</a>
+          <li class="navigation__item">
+            <a href="#service" class="navigation__link">Service</a>
           </li>
-          <li class="navigation__item"> 
-            <a href="#" class="navigation__link">Price</a>
+          <li class="navigation__item">
+            <a href="#price" class="navigation__link">Price</a>
           </li>
-          <li class="navigation__item"> 
-            <a href="#" class="navigation__link">Contacts</a>
+          <li class="navigation__item">
+            <a href="#contacts" class="navigation__link">Contacts</a>
           </li>
-      </ul>
-    </nav>
+        </ul>
+      </nav>
     </header>
     <main class="main">
       <section class="home" id="home">
-        <div class="home__content">
-          <img src="" alt="leafs">
-          <h1>We grow plants and give you oxygen.</h1>
-          <p>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-          <div class="home__button">
-            <button class="button">LEARN MORE</button>
+        <div class="home__img-holder">
+          <img src="assets/leafs.jpg" height="407" weight="448" alt="leafs">
+        </div>
+        <div class="home__column">
+          <h1 class="home__title">We grow <span class="hometext_colored"> plants </span>and give you oxygen.</h1>
+          <p class="home__text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's standard dummy text ever since the 1500s.</p>
+          <div class="home__button-holder">
+            <button class="button__h" type="button">LEARN MORE</button>
           </div>
         </div>
       </section>
       <section class="about-us" id="about-us">
         <div class="about-us__content">
-          <h2 class="title">We are professional experienced gardeners</h2>
-          <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-          dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-          book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-          unchanged.</p>
-          <img src="" alt="leafs">
+          <h2 class="about-us__title">
+            <span class="about-ustext_colored">We are </span> professional experienced 
+            <span class="about-ustext_colored"> gardeners</span>
+          </h2>
+          <p class="about-us__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+            type specimen
+            book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+            essentially
+            unchanged.</p>
+        </div>
+        <div class="about-us__img-holder">
+          <img src="assets/houseplant 1.jpg" alt="houseplants" height="479" weight="464">
         </div>
       </section>
       <section class="service" id="service">
         <div class="service__content">
-          <h2 class="title">Service and our projects</h2>
+          <h2 class="service__title">Service and our projects</h2>
           <div class="service__buttons">
-            <button class="button button_bordered">Gardens</button>
-            <button class="button button_bordered">Lawn</button>
-            <button class="button button_bordered">Planting</button>
+            <button class="button_bordered" type="button"> Gardens</button>
+            <button class="button_bordered" type="button"> Lawn</button>
+            <button class="button_bordered button_bordered--planting" type="button"> Planting</button>
           </div>
-          <img src="" alt="leafs">
         </div>
-        <div class="service__items">
+              <div class="service__items">
           <div class="card">
-            <img class="card__img" src="" alt="garden care">
+            <img class="card__img" src="assets/first.png" alt="garden care">
             <div class="card__title">Garden care</div>
             <p class="card__info">Lorem Ipsum has been the industry</p>
           </div>
           <div class="card">
-            <img class="card__img" src="" alt="planting">
+            <img class="card__img" src="assets/first (1).png" alt="planting">
             <div class="card__title">Planting</div>
             <p class="card__info">Lorem Ipsum has been the industry</p>
           </div>
           <div class="card">
-            <img class="card__img" src="" alt="Lawn care">
+            <img class="card__img" src="assets/first (2).png" alt="Lawn care">
             <div class="card__title">Lawn care</div>
             <p class="card__info">Lorem Ipsum has been the industry</p>
           </div>
           <div class="card">
-            <img class="card__img" src="" alt="planting">
+            <img class="card__img" src="assets/first (3).png" alt="planting">
             <div class="card__title">Planting</div>
             <p class="card__info">Lorem Ipsum has been the industry</p>
           </div>
           <div class="card">
-            <img class="card__img" src="" alt="Garden care">
+            <img class="card__img" src="assets/first (4).png" alt="Garden care">
             <div class="card__title">Garden care</div>
             <p class="card__info">Lorem Ipsum has been the industry</p>
           </div>
           <div class="card">
-            <img class="card__img" src="" alt="Planting">
+            <img class="card__img" src="assets/first (5).png" alt="Planting">
             <div class="card__title">Planting</div>
             <p class="card__info">Lorem Ipsum has been the industry</p>
           </div>
         </div>
       </section>
-    
-    
-      
-  
+      <section class="price" id="price">
+        <div class="price__col1">
+          <h2 class="price__title">Prices</h2>
+            <div class="price__tariff">
+              <div class="price__type">Basics</div>
+              <div class="price__type">Standard</div>
+              <div class="price__type">Pro care</div>
+            </div>
+        </div>
+          <div class="price__col2">
+            <p class="price__helper">Our best <span class="price__colored">gardeners </span>are ready to help you</p>
+            <div class="price__button">
+              <button class="pricebutton_bordered" type="button">Contact us</button>
+            </div>
+            <div class="price__img-holder">
+              <img src="assets/leafs (1).jpg" height="" weight="" alt="leafs">
+            </div>
+          </div>
+      </section>
+      <section class="contact">
+        <h2>Contact us</h2>
+        <div class="contact__img-holder">
+          <img src="assets/contact_woman 1.jpg" height="" weight="" alt="woman">
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__item">
