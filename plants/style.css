@@ -185,6 +185,9 @@ body {
   border-radius: 20px;
   padding: 16px 40px;
   margin-bottom: 32px;
+  background-image: url("assets/accordion_btn_price.png");
+  background-repeat: no-repeat;
+  background-position: 284px center;
   }
   .price__type:last-child {
   margin-bottom: 0;
@@ -201,7 +204,6 @@ body {
   }
   .price__button{
   text-align: end;
-
   }
   .pricebutton_bordered{
   margin: 0 0 39px 0;
@@ -225,10 +227,8 @@ body {
   }
 .contact{
   display: flex;
-  }
-.contact__form{
-
-  }
+  justify-content: space-between;
+}
 .contact__title{
   text-align: center;
   color: #499A18;
@@ -236,16 +236,54 @@ body {
   margin: 0;
   padding-top: 60px 0;
 }
-.city{
-  background-color:  #D6E7D2;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 0px;
-  justify-content: flex-end;
-  
-}
 .contact__img-holder{
   margin-top: 53;
 }
 .contact__form{
-  text-align: end;
+  align-items: flex-start;
+  margin-top: 148px;
+}
+.contact__button{
+  background-color:  #D6E7D2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+  padding: 5px 226px 5px 20px;
+  font: 400 20px/40px'Inter',sans-serif;
+  letter-spacing: 0.05em;
+  color: #717171;
+} 
+/* footer */
+.footer__item{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  color: #000000;
+}
+.link_github,.link_school{
+  text-decoration: none;
+  list-style: none;
+  color: #000000;
+}
+.link_school, .link_github, .year{
+  font: 400 20px/50px'Inter',sans-serif;;
+}
+.icon{
+  display: flex;
+  list-style: none;
+  color: #000000;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+}
+.icon_item:last-child {
+  margin-right: 0;
+}
+  .icon_item{
+  margin: 48px 30px 48px 0;
+  line-height: 20px;
+}
+.school_link{
+  margin: 36px 0;
+  align-items:center;
+  padding: 0;
 }
