@@ -162,40 +162,90 @@ body {
   padding: 0px 31.9px 36px 30.91px;
   }
   .card{
-    border: 1px solid #E3E1D5;
-    border-radius: 20px;
-    background-color: #EDF2EC;
-    margin-bottom: 55px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+  background-color: #EDF2EC;
+  margin-bottom: 55px;
   }
   .price{
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   }
   .price__title{
-    font: 700 40px/48px'Inter',sans-serif;
-    color: #000000;
-    padding: 40px 635px 60px 0;
+  font: 700 40px/48px'Inter',sans-serif;
+  color: #000000;
+  padding: 40px 635px 60px 0;
+  margin: 0;
   }
   .price__type{
-    font: 700 20px/20px'Inter',sans-serif;
-    color: #000000;
+  width: 250px;
+  font: 700 20px/20px'Inter',sans-serif;
+  color: #000000;
+  background: #EDF2EC;
+  border-radius: 20px;
+  padding: 16px 40px;
+  margin-bottom: 32px;
+  }
+  .price__type:last-child {
+  margin-bottom: 0;
   }
   .price__helper{
-    font: 700 40px/50px'Inter',sans-serif;
-    color: #000000;
-    text-align: end;
-    margin: 0;
-    padding: 40px 0 38px 0;
+  font: 700 40px/50px'Inter',sans-serif;
+  color: #000000;
+  text-align: end;
+  margin: 0;
+  padding: 40px 0 38px 0;
   }
   .price__colored{
-    color: #499A18;
+  color: #499A18;
   }
   .price__button{
-    text-align: end;
+  text-align: end;
+
   }
   .pricebutton_bordered{
-    margin: 38px 0 39px 0;
+  margin: 0 0 39px 0;
+  color: #E06733;
+  font: 700 20px/26px 'inika',sans-serif;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  padding: 12px 34px 12px 30px;
   }
   .price__img-holder{
-    text-align: end;
+  text-align: end;
+  margin-bottom: 115px;
   }
+  .price__tariff{
+  display: inline-block;
+  padding: 34px 41px;
+  background-color: #FFFFFF;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+  justify-content: space-around;
+  }
+.contact{
+  display: flex;
+  }
+.contact__form{
+
+  }
+.contact__title{
+  text-align: center;
+  color: #499A18;
+  font: 700 40px/52px 'inika',sans-serif;
+  margin: 0;
+  padding-top: 60px 0;
+}
+.city{
+  background-color:  #D6E7D2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+  justify-content: flex-end;
+  
+}
+.contact__img-holder{
+  margin-top: 53;
+}
+.contact__form{
+  text-align: end;
+}
