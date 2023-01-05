@@ -14,6 +14,7 @@ body {
   justify-content: space-between;
   align-items: baseline;
   font-family: 'inika',sans-serif;
+  background-color: #EDF2EC;
 }
 .navigation{
   display: flex;
@@ -49,6 +50,7 @@ body {
 }
 .home{
   display: flex;
+  background-color: #EDF2EC;
 }
 .home__img-holder{
   padding: 62px 224px 52px 0;
@@ -79,7 +81,8 @@ body {
 
 .about-us{
   display: flex;
-  height: 666px;
+  /* height: 666px; */
+  background-color: #FFFFFF;
 }
 
 .about-us__img-holder{
@@ -103,7 +106,9 @@ body {
   padding: 40px 0 155px 0;
   margin: 0;
 }
-
+.service{
+  background-color: #EDF2EC;
+}
 .service__title{
   color: #499A18;
   font: 40px/52px 'inika',sans-serif;
@@ -170,6 +175,7 @@ body {
   .price{
   display: flex;
   justify-content: space-between;
+  background-color: #FFFFFF;
   }
   .price__title{
   font: 700 40px/48px'Inter',sans-serif;
@@ -213,6 +219,12 @@ body {
   border-radius: 5px;
   padding: 12px 34px 12px 30px;
   }
+  .pricebutton_bordered:hover{
+  background-color: #E06733;
+  color: #FFFFFF;
+  transition: all 1s;
+  cursor: pointer;
+}
   .price__img-holder{
   text-align: end;
   margin-bottom: 115px;
@@ -228,6 +240,7 @@ body {
 .contact{
   display: flex;
   justify-content: space-between;
+  background-color: #EDF2EC;
 }
 .contact__title{
   text-align: center;
@@ -251,6 +264,12 @@ body {
   font: 400 20px/40px'Inter',sans-serif;
   letter-spacing: 0.05em;
   color: #717171;
+  width: 450px;
+  border: none;
+  text-align: left;
+  background-image: url(".//assets/accordion_btn_contacts.png");
+  background-repeat: no-repeat;
+  background-position: 400px center;
 } 
 /* footer */
 .footer__item{
@@ -286,4 +305,8 @@ body {
   margin: 36px 0;
   align-items:center;
   padding: 0;
+}
+.footer{
+  background-color: #FFFFFF;
+  
 }
