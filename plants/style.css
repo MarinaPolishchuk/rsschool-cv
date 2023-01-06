@@ -6,7 +6,7 @@ body {
 .wraper { 
   max-width: 1440px;
   margin: auto;
-  padding: 0 110px;
+  /* padding: 0 110px; */
   box-sizing: border-box;
 }
 .header{
@@ -15,6 +15,7 @@ body {
   align-items: baseline;
   font-family: 'inika',sans-serif;
   background-color: #EDF2EC;
+  padding: 0 110px;
 }
 .navigation{
   display: flex;
@@ -51,6 +52,7 @@ body {
 .home{
   display: flex;
   background-color: #EDF2EC;
+  padding: 0 110px;
 }
 .home__img-holder{
   padding: 62px 224px 52px 0;
@@ -83,6 +85,7 @@ body {
   display: flex;
   /* height: 666px; */
   background-color: #FFFFFF;
+  padding: 0 110px;
 }
 
 .about-us__img-holder{
@@ -108,6 +111,7 @@ body {
 }
 .service{
   background-color: #EDF2EC;
+  padding: 0 110px;
 }
 .service__title{
   color: #499A18;
@@ -176,6 +180,7 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #FFFFFF;
+  padding: 0 110px;
   }
   .price__title{
   font: 700 40px/48px'Inter',sans-serif;
@@ -241,6 +246,7 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #EDF2EC;
+  padding: 0 110px;
 }
 .contact__title{
   text-align: center;
@@ -308,5 +314,5 @@ body {
 }
 .footer{
   background-color: #FFFFFF;
-  
+  padding: 0 110px;
 }
