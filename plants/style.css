@@ -1,8 +1,12 @@
 body {
   margin: 0;
   font: 400 20px/35px 'Inter',sans-serif;
-  color: #010201; 
+  color: #010201;
+  transition-property: all;
 }
+
+  
+
 .wraper { 
   max-width: 1440px;
   margin: auto;
@@ -253,10 +257,13 @@ body {
   color: #499A18;
   font: 700 40px/52px 'inika',sans-serif;
   margin: 0;
-  padding-top: 60px 0;
+  padding-top: 60px;
 }
 .contact__img-holder{
-  margin-top: 53;
+  margin-top: 53px;
+}
+.contact__img {
+  display: block;
 }
 .contact__form{
   align-items: flex-start;
