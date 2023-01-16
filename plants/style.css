@@ -84,7 +84,7 @@ body {
   border: 2px solid #E06733;
   font-size: 16px;
   line-height: 20px;
-  padding: 14px 27px; 
+  padding: 10px 25px; 
   text-align: center;
 }
 .button__h:hover{
@@ -208,26 +208,32 @@ body {
   background-color: #FFFFFF;
   padding: 0 110px;
   }
+  .price__col1{
+    width: 27.21%;
+  }
+  .price__col2{
+    width: 37.05%;
+  }
   .price__title{
   font: 700 40px/48px'Inter',sans-serif;
   color: #000000;
-  padding: 40px 635px 60px 0;
+  padding: 40px 0 60px 0;
   margin: 0;
   }
   .price__type{
-  width: 250px;
+  /* width: 250px; */
   font: 700 20px/20px'Inter',sans-serif;
   color: #000000;
   background: #EDF2EC;
   border-radius: 20px;
-  padding: 16px 40px;
-  margin-bottom: 32px;
+  padding: 16px 120px 16px 40px;
+  margin: 30px 41px 0 41px;
   background-image: url("assets/accordion_btn_price.png");
   background-repeat: no-repeat;
-  background-position: 284px center;
+  background-position: 195px center;
   }
   .price__type:last-child {
-  margin-bottom: 0;
+  margin-bottom: 33px; 
   }
   .price__helper{
   font: 700 40px/50px'Inter',sans-serif;
@@ -248,7 +254,7 @@ body {
   font: 700 20px/26px 'inika',sans-serif;
   border: 1px solid #E06733;
   border-radius: 5px;
-  padding: 12px 34px 12px 30px;
+  padding: 12px 31px ;
   }
   .pricebutton_bordered:hover{
   background-color: #E06733;
@@ -262,7 +268,6 @@ body {
   }
   .price__tariff{
   display: inline-block;
-  padding: 34px 41px;
   background-color: #FFFFFF;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
@@ -292,6 +297,7 @@ body {
   margin-top: 148px;
 }
 .contact__button{
+  display: inline-block;
   background-color:  #D6E7D2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0px;
@@ -299,7 +305,8 @@ body {
   font: 400 20px/40px'Inter',sans-serif;
   letter-spacing: 0.05em;
   color: #717171;
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   border: none;
   text-align: left;
   background-image: url(".//assets/accordion_btn_contacts.png");
@@ -365,6 +372,7 @@ tablet version
   .home__text{
     font-size: 16px;
     line-height:25px;
+    margin: 32px 0 34px ;
   }
 
 
@@ -377,7 +385,7 @@ tablet version
 }
 .home__column{
   width: 51.1%;
-  padding: 40px 0 70px;
+  padding: 43px 0 70px;
 }
 .about-us{
 flex-direction: column ;
@@ -421,5 +429,43 @@ align-items: center;
 }
 .service__items{
   padding-bottom: 32px;
+}
+
+.price__helper{
+  font-size:  25px;
+  line-height: 35px;
+  padding: 142px 0 27px 5.99%;
+}
+.price__col1{
+    width: 49.70%;
+  }
+  .price__col2{
+    width: 44.31%;
+}
+.price__title{
+  padding-bottom: 54px;
+}
+.pricebutton_bordered{
+  padding-right: 28px;
+  margin-bottom: 31px;
+}
+.price__img-holder{
+margin-bottom: 80px;
+}
+
+.contact{
+  flex-direction: column;
+}
+.contact__img-holder{
+  order: 3;
+}
+.contact__title{
+  font-size: 25px;
+  padding-top: 9px;
+  margin-top: 0px;
+}
+.contact__form{
+  margin: 67px 0 0;
+  text-align: center;
 }
 }
