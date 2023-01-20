@@ -619,19 +619,20 @@ mobile version
 @media (max-width: 380px) {
   .wraper-holder {
     padding: 0 25px;
+
   }
 
   .home__title {
     font-size: 25px;
     line-height: 35px;
-    text-align: center;
+    text-align: start;
     margin: 0;
     padding: 0;
   }
 
   .button__h {
     font-size: 10px;
-    padding: 8px 18px;
+    padding: 7px 15px;
   }
 
   .home__img-holder {
@@ -640,11 +641,11 @@ mobile version
 
   .home__column {
     width: 100%;
-    padding: 24px 0;
+    padding: 24px 0 20px;
   }
 
   .home__text {
-    margin: 20.36 0 20.08px;
+    margin: 20.36px 0 20.08px;
   }
 
   .about-us__title {
@@ -656,18 +657,20 @@ mobile version
 
   .about-us__text {
     font-size: 15px;
-    line-height: 25px;
+    line-height: 24px;
   }
 
   .about-us__img-holder {
     width: 45%;
-    padding: 0 0 31px 0;
+    padding: 0 0 23px 0;
   }
 
   .service__title {
     font-size: 25px;
     line-height: 32.57px;
     padding-bottom: 35px;
+    padding-right: 143px;
+    width: auto;
   }
 
   .service__buttons {
@@ -675,21 +678,26 @@ mobile version
   }
 
   .service__content {
-    padding: 30px 0 40px;
+    padding: 30px 0 28px;
+  }
+
+  .service__items:last-child {
+    padding-bottom: 2px;
+
   }
 
   .button_bordered {
     font-size: 15px;
     line-height: 19.54px;
     padding: 8px 28px;
-    margin: 0 10px 9px 0;
+    margin: 0 10px 8px 0;
     width: 37%;
   }
 
   .card {
     width: 85%;
     align-items: center;
-    margin: 0 8% 34px;
+    margin: 0 8% 32px;
   }
 
   .card:last-child {
@@ -697,7 +705,7 @@ mobile version
   }
 
   .price__title {
-    font-size: 25px;
+    font-size: 23px;
     line-height: 30.26px;
     text-align: center;
     padding: 25px 0 40px;
@@ -711,7 +719,6 @@ mobile version
 
   .price {
     flex-direction: column;
-
   }
 
   .price__col1 {
@@ -720,8 +727,10 @@ mobile version
   }
 
   .price__type {
-    padding: 16px 61px 16px 30px;
-    margin: 29px 22px 13.92px;
+    padding: 12px 61px 16px 29px;
+    margin: 17px 27px 13.92px;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .price__col2 {
@@ -731,20 +740,23 @@ mobile version
   .price__helper {
     font-size: 20px;
     text-align: center;
-    padding: 19px 51px 14px;
+    padding: 19px 51px 20px;
   }
 
   .pricebutton_bordered {
     margin: 0 auto 40px;
     display: block;
+    font-size: 15px;
+    line-height: 19.54px;
+    padding: 8px 22px;
 
   }
 
   .contact__title {
-    font-size: 25px;
+    font-size: 17px;
     line-height: 32.57px;
     padding: 0;
-    margin: 0 0 49px 0;
+    margin: 0 0 64px 0;
   }
 
   .contact__button {
@@ -758,6 +770,14 @@ mobile version
   .contact__img-holder {
     margin: 0;
     padding-top: 132px;
+    padding-left: 0px;
+  }
+  .git{
+    padding-top: 9px;
+  }
+  .icon{
+    padding-top: 7px;
+    padding-bottom: 11px;
   }
 
   .burger-menu {
@@ -777,7 +797,7 @@ mobile version
     height: 10%;
     width: 100%;
     transition: all 0.3s ease 0s;
-    background-color: #000000;
+    background-color: #717171;
   }
 
   .burger-menu::before,
@@ -813,7 +833,7 @@ mobile version
   }
 
   .header {
-    background-color: #E06733;
+    background-color: #EDF2EC;
     position: sticky;
     top: 0;
     left: 0;
@@ -821,10 +841,14 @@ mobile version
     box-sizing: border-box;
   }
 
+  .header__logo {
+    padding: 34px 0 30px 0;
+  }
+
   .header__navigation {
     position: fixed;
-    top: 35px;
-    left: -100%;
+    top: 80px;
+    left: -125%;
     width: 100%;
     height: 100%;
 
