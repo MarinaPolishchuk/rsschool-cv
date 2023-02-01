@@ -71,3 +71,23 @@ function onMenuLinkClick(e){
   }
  }
 }
+//accordion
+var acc = [...document.getElementsByClassName("price__type")];
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    if (this.classList.contains('active')) {
+      this.classList.remove("active");
+      this.querySelector('.accordion_block').style.height = 0;
+    } else {
+      acc.forEach(el => {
+        el.classList.remove('active');
+        el.querySelector('.accordion_block').style.height = 0;
+      });
+      this.classList.add("active");
+      let accordion = this.querySelector('.accordion_block');
+      accordion.style.height = accordion.scrollHeight + 13 + "px";
+    }
+  });
+}
