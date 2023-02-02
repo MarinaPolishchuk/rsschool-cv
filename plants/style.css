@@ -967,7 +967,9 @@ mobile version
 }
 
 /* contact select */
-.contact__form {}
+.contact__form {
+  position: relative;
+}
 
 .contact__button {}
 
@@ -975,24 +977,19 @@ mobile version
   font: 400 16px/40px 'Inter', sans-serif;
   border-bottom: 1px solid #D9D9D9;
   color: #499A18;
-  padding-top: 12px;
-  padding-left: 20px;
-  padding-bottom: 0;
-  background-color: #DCE9D9;
+  padding: 12px 6px 0;
+  cursor: pointer;
 }
 
-.city__select:first-child {
-  padding-top: 27px;
-}
-
-.city__select:last-child {
-  padding-bottom: 31px;
-}
 
 .contact__form.active,
-.contact__form:hover .contact__button {
+.contact__form-holder:hover .contact__button {
   background-color: #C1E698;
   box-shadow: none;
+}
+
+.contact__form-holder:hover .contact__select {
+  display: block;
 }
 
 .contact__form.active,
@@ -1002,30 +999,44 @@ mobile version
 }
 
 .contact__select {
-  width: 100%;
   display: none;
+  position: absolute;
+  top: 50px;
+  box-sizing: border-box;
+  padding: 15px 50px 30px 20px;
+  width: 100%;
+  background-color: #DCE9D9;
+  /* display: none; */
 }
 
 .city_col1 {
   font: 400 16px/40px 'Inter', sans-serif;
   color: #000000;
-  padding: 17px 0 24px 33px;
+  padding: 17px 0 14px 33px;
+  width: 28.34%;
 }
 
 .city_col2 {
   font: 400 16px/40px 'Inter', sans-serif;
   color: #717171;
-  padding: 17px 76px 24px 5px;
+  padding: 17px 16.88% 14px 5px;
+  width: 45.53%;
 }
 
+.city_button_holder {
+  display: block;
+margin: 0 36% 32px 36%;
+}
 .button_call {
+  box-sizing: border-box;
   border-radius: 5px;
   border: 1px solid #E06733;
   background-color: #EDF2EC;
   font: 700 10px/13.3px 'Inika', sans-serif;
   color: #717171;
-  padding: 7px 29px;
-  margin: 0 38.1% 32px 38.1%;
+  padding: 5px 46px;
+  text-decoration: none;
+
 }
 
 .button_call:hover {
@@ -1037,12 +1048,20 @@ mobile version
 
 .city__cards {
   display: flex;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 
 .city__block {
+  box-sizing: border-box;
   border: 1px solid #000000;
   border-radius: 20px;
   background-color: #EDF2EC;
   display: none;
+  margin-top: 53px;
+}
+
+.city__block.active {
+  display: block;
 }
