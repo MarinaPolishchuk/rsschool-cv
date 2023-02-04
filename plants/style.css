@@ -196,11 +196,12 @@ body._lock {
   /* padding: 69px 0 105px 0px; */
 }
 
-.button_bo3rdered--planting {
+.button_bordered--planting {
   margin-right: 0;
 }
 
-.button_bordered:hover {
+.button_bordered:hover,
+.button_bordered.active {
   background-color: #E06733;
   color: #FFFFFF;
   transition: all 1s;
@@ -237,6 +238,14 @@ body._lock {
   margin-bottom: 55px;
   width: 27%;
   overflow: hidden;
+}
+
+.service.blured .card {
+  filter: blur(4px);
+}
+
+.service.blured .card.not-blured {
+  filter: blur(0);
 }
 
 .card__img {
@@ -981,18 +990,15 @@ mobile version
   cursor: pointer;
 }
 
-
-.contact__form.active,
-.contact__form-holder:hover .contact__button {
+.contact__form.selected .contact__button {
   background-color: #C1E698;
   box-shadow: none;
 }
 
-.contact__form-holder:hover .contact__select {
+.contact__form.active .contact__select {
   display: block;
 }
 
-.contact__form.active,
 .city__select:hover {
   color: #717171;
   border-bottom: 1px solid #717171;
@@ -1025,8 +1031,9 @@ mobile version
 
 .city_button_holder {
   display: block;
-margin: 0 36% 32px 36%;
+  margin: 0 36% 32px 36%;
 }
+
 .button_call {
   box-sizing: border-box;
   border-radius: 5px;

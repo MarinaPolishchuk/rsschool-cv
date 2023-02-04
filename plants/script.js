@@ -100,12 +100,64 @@ const cities = [...document.getElementsByClassName('city__block')];
 
 let formClick = (e) => {
   let target = e.target;
+  if (target === formButtonEl) {
+    formEl.classList.add('active');
+    formEl.classList.add('selected');
+  }
   if (target.classList.contains('city__select')) {
     formButtonEl.textContent = target.textContent;
     cities.forEach(c => c.classList.remove('active'));
     let city = formEl.querySelector('.city__block-' + target.dataset.cityIndex);
     city.classList.add('active');
+    formEl.classList.remove('active');
   }
 };
 
 formEl.addEventListener('click', formClick);
+
+// services block
+const serviceHolderEl = document.querySelector('.service.wraper-holder');
+const serviceButtons = [...document.getElementsByClassName('button_bordered')];
+const serviceCards = [...document.getElementsByClassName('card')];
+
+let serviceClick = (e) => {
+  let target = e.target;
+  if (serviceButtons.includes(target)) {
+    let countButtons = 0;
+    serviceButtons.forEach(i => {
+      if (i.classList.contains('active')) {
+        countButtons++
+      }
+    });
+
+    if (target.classList.contains('active')) {
+      target.classList.remove('active');
+    } else {
+      if (countButtons < 2) {
+        serviceHolderEl.classList.add('blured');
+        target.classList.add('active');
+      }
+    }
+
+    serviceCards.forEach(c => c.classList.remove('not-blured'));
+    countButtons = 0;
+    serviceButtons.forEach(i => {
+      if (i.classList.contains('active')) {
+        countButtons++;
+
+        const title = i.dataset.title;
+        serviceCards.forEach(c => {
+          if (c.classList.contains('card--' + title)) {
+            c.classList.add('not-blured');
+          }
+        });
+      }
+    });
+
+    if (countButtons === 0) {
+      serviceHolderEl.classList.remove('blured');
+    }
+  }
+};
+
+serviceHolderEl.addEventListener('click', serviceClick);
