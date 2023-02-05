@@ -101,8 +101,14 @@ const cities = [...document.getElementsByClassName('city__block')];
 let formClick = (e) => {
   let target = e.target;
   if (target === formButtonEl) {
-    formEl.classList.add('active');
-    formEl.classList.add('selected');
+    
+    if(formEl.classList.contains('active')){
+      formEl.classList.remove('active');
+    }else{
+      formEl.classList.add('active');
+      formEl.classList.add('selected');
+    }
+
   }
   if (target.classList.contains('city__select')) {
     formButtonEl.textContent = target.textContent;

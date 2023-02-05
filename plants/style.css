@@ -959,7 +959,12 @@ mobile version
 
 .price__tariff.active,
 .price__type:hover {
-  background-color: #D6E7D2
+  background-color: #D6E7D2;
+
+}
+
+.price__type.active {
+  background-image: url("assets/accordion_btn_contact2.png");
 }
 
 .accordion_block {
@@ -980,8 +985,6 @@ mobile version
   position: relative;
 }
 
-.contact__button {}
-
 .city__select {
   font: 400 16px/40px 'Inter', sans-serif;
   border-bottom: 1px solid #D9D9D9;
@@ -995,8 +998,13 @@ mobile version
   box-shadow: none;
 }
 
+.contact__form.active.selected .contact__button {
+  background-image: url(".//assets/accordion_btn_contact2.png");
+}
+
 .contact__form.active .contact__select {
   display: block;
+
 }
 
 .city__select:hover {
