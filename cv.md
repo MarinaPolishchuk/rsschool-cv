@@ -43,8 +43,8 @@ I am 30 years old, I worked as an accountant at the plant, graphic editor in com
 ***** 
 
 ## My projects
-1.student project ["Plant" https://marinapolishchuk.github.io/rsschool-cv/plants/]
-2.student project ["Momentum" https://marinapolishchuk.github.io/stage1-tasks/]
+1. student project "Plant" [ https://marinapolishchuk.github.io/rsschool-cv/plants/ ]
+2. student project "Momentum" [ https://marinapolishchuk.github.io/stage1-tasks/ ]
 
 *****
 
