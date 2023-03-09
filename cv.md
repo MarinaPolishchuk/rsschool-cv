@@ -45,7 +45,7 @@ I am 30 years old, I worked as an accountant at the plant, graphic editor in com
 2.student project ["Momentum" https://marinapolishchuk.github.io/stage1-tasks/]
 
 *****
-g
+
 **##Languages**
 +English - A2 (accordind training.epam test)
 +Ukrainian
