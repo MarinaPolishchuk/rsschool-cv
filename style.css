@@ -1,86 +1,106 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    max-width: 1440px;
+    min-width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
     font-family: 'Titillium', sans-serif;
     font-size: 18px;
     font-weight: 200;
     line-height: 2;
     color: #0c0c0c;
 }
-h1, h2{
-    font-style: italic;
-    color: #6c1a8d;
-}
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
+
+.main {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
 }
+
+.column-1 {
+    width: 30%;
+    background-color: #F5F0BB;
+    padding: 20px;
+    border: 2px solid #73A9AD;
+    border-top: 0;
+}
+
+.title__column-1 {
+    color: #73A9AD;
+}
+
+.user__img {
+    justify-content: center;
+    border-radius: 50%;
+    max-width: 70%;
+    height: auto;
+    padding: 0 15%;
+}
+
+.column-2 {
+    width: 70%;
+    background-color: #C4DFAA;
+    padding: 20px;
+    border: 2px solid #73A9AD;
+    border-top: 0;
+    border-left: 0;
+}
+
+.title__column-2 {
+    color: #F5F0BB;
+}
+
 .nav-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border: 2px solid #6c1a8d;
-    padding: 10px 30px;
-    background-color: lavender;
+    border: 2px solid #73A9AD;
+    background-color: #F5F0BB;
 }
-.nav-list a{
+
+.nav-list a {
     text-decoration: none;
 }
+
 .nav-list {
-  list-style: none;
+    list-style: none;
+    margin: 0;
 }
+
 .nav-link {
     padding: 0 20px;
     line-height: 50px;
+    color: #73A9AD;
 }
+
 .nav-link:hover {
     color: #b43212;
 }
-.section {
-    width: 50%;
-}
-@media (max-width: 768px) {
-.section {
-    width: 100%;
-}
-}
-.user__img{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 60%;
-    box-shadow:10px 10px 10px#6c1a8d;
-    max-width: 100%;
-    height: auto;
-}
-.profile{ 
-    text-align: center;
-}
-.section-about{
+
+.section-about {
     text-align: justify;
-    border: 2px solid #6c1a8d;
     position: relative;
-    padding: 20px;
+
 }
-.footer{
+
+.footer {
     display: flex;
-    border: 2px solid #6c1a8d;
-    background-color: lavender;
+    border: 2px solid #F5F0BB;
+    background-color: #C4DFAA;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
+
 .footer-item {
     width: 33%;
     text-align: right;
 }
+
 .footer__links {
     display: flex;
     justify-content: space-between;
     text-align: left;
-    text-decoration: none;   
+    text-decoration: none;
 }
