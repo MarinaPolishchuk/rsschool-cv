@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@git00&display=swap" rel="stylesheet">
   <title> CV </title>
 </head>
 <body>
@@ -24,18 +24,48 @@
         <li class="nav-item"> <a href="#education" class="nav-link">Education</a></li>
         <li class="nav-item"> <a href="#about-me" class="nav-link">About Me</a></li>
         <li class="nav-item"> <a href="#code" class="nav-link">Example of code</a></li>
+        <li class="nav-item"> <a href="#projects" class="nav-link">My projects</a></li>
         <li class="nav-item"> <a href="#Languages" class="nav-link">Languages</a></li>
       </ul>
     </nav>
   </header>
   <main class="main">
-    <section class="profile">
-      <img class="user__img" src="./assets/foto.jpg" alt="my photo" height="300" width="300">
-      <h1>Marina Polishchuk</h1>
-    </section>
-    <div class="container">
+  <div class="column-1">
+      <section class="profile">
+        <img class="user__img" src="./assets/IMG_20190528_130159копія.jpg" alt="my photo" height="300" width="300">
+        <h1 class="title__column-1">Marina Polishchuk</h1>
+      </section>
+      <section class="section" id="contacts">
+        <h2 class="title__column-1">Contacts</h2>
+        <ul>
+          <li>Phone: +380992418097</li>
+          <li>E-mail: me41.harchenko@gmail.com</li>
+          <li>Telegram: Marina Pol</li>
+          <li>Discord: mdy_marina_polishchuk#9012</li>
+        </ul>
+      </section>
+      <section class="section" id="skills">
+        <h2 class="title__column-1">Skills</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Photoshop (Basic)</li>
+          <li>Git,Github</li>
+          <li>Figma</li>
+        </ul>
+      </section>
+      <section class="section" id="Languages">
+        <h2 class="title__column-1">Languages</h2>
+        <ul>
+          <li>English - A2 (accordind training.epam test)</li>
+          <li>Ukrainian</li>
+          <li>Russian</li>
+        </ul>
+      </section>
+  </div>
+  <div class="column-2">
       <section class="section-about" id="about-me">
-        <h2>About Me</h2>
+        <h2 class="title__column-2">About Me</h2>
         <p class="about-me">I am 30 years old, I worked as an accountant at the plant, graphic editor in company Mindy
           Support. The last
           place of
@@ -43,57 +73,33 @@
           JavaScript,Front-end,
           but it was still scary to start. <b>My motto in life - You never know what you can do till you try.</b></p>
       </section>
-    </div>
-    <div class="container">
-      <section class="section" id="contacts">
-        <h2>Contacts</h2>
-        <ul>
-          <li>Phone: +38 0992418097</li>
-          <li>E-mail: me41.harchenko@gmail.com</li>
-          <li>Telegram: Marina Pol</li>
-          <li>Discord: mdy_marina_polishchuk#9012</li>
-        </ul>
-      </section>
-      <section class="section" id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML5 (Basic)</li>
-          <li>CSS3 (Basic)</li>
-          <li>Photoshop (Basic)</li>
-          <li>Git,Github</li>
-        </ul>
-      </section>
-      <section class="section" id="courses">
-        <h2>Courses</h2>
-        <ul>
-          <li>2019 Courses of Web Design in A-level school</li>
-          <li>2022 IT Курсы of AROKEN on Youtube</li>
-          <li>2022 Code Basics courses CSS,HTML</li>
-        </ul>
-      </section>
       <section class="section" id="education">
-        <h2>Education</h2>
+        <h2 class="title__column-2">Education</h2>
         <ul>
           <li>2013 Poltava University of Economics and Trade / Finance</li>
         </ul>
       </section>
+      <section class="section" id="courses">
+        <h2 class="title__column-2">Courses</h2>
+        <ul>
+          <li>2019 Courses of Web Design in A-level school</li>
+          <li>2022 IT Курсы of AROKEN on Youtube</li>
+          <li>2022 Code Basics courses CSS,HTML</li>
+          <li>2023 RS School "Pre-school JS/FRONT-END"</li>
+        </ul>
+      </section>
       <section class="section" id="code">
-        <h2>Code example</h2>
+        <h2 class="title__column-2">Code example</h2>
         <pre>
   function multiply(a, b){
     return a * b
   }
         </pre>
       </section>
-      <section class="section" id="Languages">
-        <h2>Languages</h2>
-        <ul>
-          <li>English - A2 (accordind training.epam test)</li>
-          <li>Ukrainian</li>
-          <li>Russian</li>
-        </ul>
+      <section class="section" id="projects">
+        <h2 class="title__column-2">My projects</h2>
       </section>
-    </div>
+  </div >
   </main>
   <footer class="footer">
     <div class="footer-item">
